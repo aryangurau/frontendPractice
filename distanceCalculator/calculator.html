@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+  <body>
+    <div class="con">
+      <form class="form">
+        <h1>Distance Converter App</h1>
+          <table class="table">
+      
+            <tr class="row1-wrapper">
+              <td colspan="2">
+                <select class="row1 row3">
+                  <option value="">Select any measurement</option>
+                  <option value="length">length</option>
+                  <option value="Area">Area</option>
+                  <option value="Time">Time</option>
+                </select>
+              </td>
+            </tr>
+            <tr >
+              <td >
+                <input type="text" placeholder="Enter value" id="enterValue"  />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="converted value"
+                  id="converted" 
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <select
+                  class="row3"
+                  id="firstDropdown"
+                  onchange="converter(); return false"
+                >
+                  <option value="kilometer">Kilometer</option>
+                  <option value="meter">meter</option>
+                  <option value="centimeter">centimeter</option>
+                  <option value="foot">foot</option>
+                </select>
+              </td>
+              <td>
+                <select
+                  class="row3"
+                  id="secondDropdown"
+                  onchange="converter(); return false"
+                >
+                  <option value="kilometer">Kilometer</option>
+                  <option value="meter">meter</option>
+                  <option value="centimeter">centimeter</option>
+                  <option value="foot">foot</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+      <!-- <button type="button" onclick="converter(); return false">Convert</button> -->
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
